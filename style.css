@@ -1,0 +1,91 @@
+/* Resets and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Main container */
+.container {
+  max-width: 700px;
+  width: 100%;
+}
+
+/* Header Section */
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.header p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+/*Accordion Warpper */
+.accordion {
+  background: #f8f9fa;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+/* Individual Accordion Item */
+.accordion-item {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* Remove border botton form the last item */
+.accordion-item:last-child {
+  border-bottom: none;
+}
+
+/* Accordion Header (Clickable button) */
+.accordion-header {
+  width: 100%;
+  padding: 20px 25px;
+  background: #f8f9fa;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+  transition: backgroud-color 0.3s ease;
+}
+
+/* Hover Effect on header */
+.accordion-header:hover {
+  background: linear-gradient(135deg, #e0f7ff 0%, #d1f2ff 100%);
+}
+
+/* Active State Styling */
+.accordion-item:active .accordion-header {
+  background: linear-gradient(135deg, #00b4db 0%, #0083b0 100%);
+  color: white;
+}
+
+/* Icon Container */
+.accordion-icon {
+  width: 24px;
+}
