@@ -1,129 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FAQ Accordion</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!-- Main Container -->
-    <div class="container">
-      <!-- Header Section -->
-      <div class="header">
-        <h1>FAQ Accordion</h1>
-        <p>Click on any question to reveal the answer</p>
-      </div>
 
-      <!-- Accordion Component -->
-      <div class="accordion">
-        <!-- Accordion-item 1 -->
-        <div class="accordion-item">
-          <button class="accordion-header">
-            <span>What is accordion component?</span>
-            <span class="accordion-icon">
-              <img
-                src="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/svg/angle-down-solid.svg"
-                alt="Toggle icon"
-              />
-            </span>
-          </button>
-          <div class="accordion-content">
-            <div class="accordion-body">
-              An accordion is a vertically stacked list of items where each item
-              can be expanded or collapsed to reveal content associated with
-              that item. It's commonly used for FAQs, navigation menus, and
-              organizing large amounts of content in a compact space.
-            </div>
-          </div>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FAQ Accordion</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-        <!-- Accordion Item 2 -->
-        <div class="accordion-item">
-          <button class="accordion-header">
-            <span>How does the expand/collapse animation work?</span>
-            <span class="accordion-icon"
-              ><img
-                src="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/svg/angle-down-solid.svg"
-                alt="Toggle icon"
-            /></span>
-          </button>
-          <div class="accordion-content">
-            <div class="accordion-body">
-              The animation is achieved using CSS transitions on the max-height
-              property. When an item is clicked, JavaScript adds an 'active'
-              class which changes the max-height from 0 to a larger value,
-              creating a smooth sliding effect. The transition property ensures
-              this change happens gradually rather than instantly.
-            </div>
-          </div>
-        </div>
+<body>
+  <!-- Main Container -->
+  <div class="container">
+    <!-- Header Section -->
+    <div class="header">
+      <h1>FAQ Accordion</h1>
+      <p>Click on any question to reveal the answer</p>
+    </div>
 
-        <!-- Accordion Item 3 -->
-        <div class="accordion-item">
-          <button class="accordion-header">
-            <span>Can multiple sections be open at once?</span>
-            <span class="accordion-icon"
-              ><img
-                src="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/svg/angle-down-solid.svg"
-                alt="Toggle icon"
-            /></span>
-          </button>
-          <div class="accordion-content">
-            <div class="accordion-body">
-              In this implementation, only one section can be open at a time.
-              When you click on a new item, the previously open item
-              automatically closes. However, the code can be easily modified to
-              allow multiple sections to be open simultaneously by removing the
-              logic that closes other items.
-            </div>
-          </div>
-        </div>
-
-        <!-- Accordion Item 4 -->
-        <div class="accordion-item">
-          <button class="accordion-header">
-            <span>Is this according acessible?</span>
-            <span class="accordion-icon"
-              ><img
-                src="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/svg/angle-down-solid.svg"
-                alt="Toggle icon"
-            /></span>
-          </button>
-          <div class="accordion-content">
-            <div class="accordion-body">
-              Yes! This accordion uses semantic HTML with button elements for
-              headers, making it keyboard accessible. Users can navigate through
-              items using the Tab key and activate them with Enter or Space. The
-              structure is also screen reader friendly, ensuring all users can
-              interact with the content effectively.
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Accordion Item 5-->
+    <!-- Accordion Component -->
+    <div class="accordion">
+      <!-- Accordion-item 1 -->
       <div class="accordion-item">
         <button class="accordion-header">
-          <span>What are the common case of accordion</span>
-          <span class="accordion-icon"
-            ><img
-              src="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/svg/angle-down-solid.svg"
-              alt="Toggle icon"
-          /></span>
+          <span>What is accordion component?</span>
+          <span class="accordion-icon">
+            <img src="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/svg/angle-down-solid.svg"
+              alt="Toggle icon" />
+          </span>
         </button>
         <div class="accordion-content">
           <div class="accordion-body">
-            Accordions are widely used for FAQ sections, product specifications,
-            settings panels, mobile navigation menus, temrs and conditions, step
-            by step guides, and any scenerio where you need to display a large
-            amount of content in a compact, organized manner. They improve user
-            experiance by reducing scrolling and allowing users to focus on
-            specific content.
+            An accordion is a vertically stacked list of items where each item
+            can be expanded or collapsed to reveal content associated with
+            that item. It's commonly used for FAQs, navigation menus, and
+            organizing large amounts of content in a compact space.
+          </div>
+        </div>
+      </div>
+
+      <!-- Accordion Item 2 -->
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <span>How does the expand/collapse animation work?</span>
+          <span class="accordion-icon"><img
+              src="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/svg/angle-down-solid.svg"
+              alt="Toggle icon" /></span>
+        </button>
+        <div class="accordion-content">
+          <div class="accordion-body">
+            The animation is achieved using CSS transitions on the max-height
+            property. When an item is clicked, JavaScript adds an 'active'
+            class which changes the max-height from 0 to a larger value,
+            creating a smooth sliding effect. The transition property ensures
+            this change happens gradually rather than instantly.
+          </div>
+        </div>
+      </div>
+
+      <!-- Accordion Item 3 -->
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <span>Can multiple sections be open at once?</span>
+          <span class="accordion-icon"><img
+              src="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/svg/angle-down-solid.svg"
+              alt="Toggle icon" /></span>
+        </button>
+        <div class="accordion-content">
+          <div class="accordion-body">
+            In this implementation, only one section can be open at a time.
+            When you click on a new item, the previously open item
+            automatically closes. However, the code can be easily modified to
+            allow multiple sections to be open simultaneously by removing the
+            logic that closes other items.
+          </div>
+        </div>
+      </div>
+
+      <!-- Accordion Item 4 -->
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <span>Is this according acessible?</span>
+          <span class="accordion-icon"><img
+              src="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/svg/angle-down-solid.svg"
+              alt="Toggle icon" /></span>
+        </button>
+        <div class="accordion-content">
+          <div class="accordion-body">
+            Yes! This accordion uses semantic HTML with button elements for
+            headers, making it keyboard accessible. Users can navigate through
+            items using the Tab key and activate them with Enter or Space. The
+            structure is also screen reader friendly, ensuring all users can
+            interact with the content effectively.
           </div>
         </div>
       </div>
     </div>
-    <script src="script.js"></script>
-  </body>
+
+    <!-- Accordion Item 5-->
+    <div class="accordion-item">
+      <button class="accordion-header">
+        <span>What are the common case of accordion</span>
+        <span class="accordion-icon"><img
+            src="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/svg/angle-down-solid.svg"
+            alt="Toggle icon" /></span>
+      </button>
+      <div class="accordion-content">
+        <div class="accordion-body">
+          Accordions are widely used for FAQ sections, product specifications,
+          settings panels, mobile navigation menus, temrs and conditions, step
+          by step guides, and any scenerio where you need to display a large
+          amount of content in a compact, organized manner. They improve user
+          experiance by reducing scrolling and allowing users to focus on
+          specific content.
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
 </html>

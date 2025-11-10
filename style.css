@@ -88,4 +88,57 @@ body {
 /* Icon Container */
 .accordion-icon {
   width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+/* Rotate Icon when active */
+.accordion-item.active .accordion-icon {
+  transform: rotate(180deg);
+}
+
+/*SVG icon styling */
+.accordion-icon img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* Content wapper for smooth animation */
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+/* Inner content padding */
+.accordion-body {
+  padding: 0 25px 20px 25px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* When accordion item is active/open */
+.accordion-item.active .accordion-content {
+  max-height: 500px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+  .header h1 {
+    font-size: 2.5rem;
+  }
+
+  .accordion-header {
+    padding: 15px 20px;
+    font-size: 1rem;
+  }
+
+  .accordion-body {
+    padding: 0px 20px 15px 20px;
+    font-size: 0.95rem;
+  }
 }
