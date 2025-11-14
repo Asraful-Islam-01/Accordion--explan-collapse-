@@ -1,4 +1,4 @@
-/* Resets and base styles */
+/* Reset and base styles */
 * {
   margin: 0;
   padding: 0;
@@ -21,7 +21,7 @@ body {
   width: 100%;
 }
 
-/* Header Section */
+/* Header section */
 .header {
   text-align: center;
   margin-bottom: 30px;
@@ -39,7 +39,7 @@ body {
   opacity: 0.9;
 }
 
-/*Accordion Warpper */
+/* Accordion wrapper */
 .accordion {
   background: #f8f9fa;
   border-radius: 12px;
@@ -47,17 +47,17 @@ body {
   overflow: hidden;
 }
 
-/* Individual Accordion Item */
+/* Individual accordion item */
 .accordion-item {
   border-bottom: 1px solid #e0e0e0;
 }
 
-/* Remove border botton form the last item */
+/* Remove border from last item */
 .accordion-item:last-child {
   border-bottom: none;
 }
 
-/* Accordion Header (Clickable button) */
+/* Accordion header (clickable button) */
 .accordion-header {
   width: 100%;
   padding: 20px 25px;
@@ -71,21 +71,21 @@ body {
   font-size: 1.1rem;
   font-weight: 600;
   color: #333;
-  transition: backgroud-color 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 
-/* Hover Effect on header */
+/* Hover effect on header */
 .accordion-header:hover {
   background: linear-gradient(135deg, #e0f7ff 0%, #d1f2ff 100%);
 }
 
-/* Active State Styling */
-.accordion-item:active .accordion-header {
+/* Active state styling */
+.accordion-item.active .accordion-header {
   background: linear-gradient(135deg, #00b4db 0%, #0083b0 100%);
   color: white;
 }
 
-/* Icon Container */
+/* Icon container */
 .accordion-icon {
   width: 24px;
   height: 24px;
@@ -95,19 +95,19 @@ body {
   transition: transform 0.3s ease;
 }
 
-/* Rotate Icon when active */
+/* Rotate icon when active */
 .accordion-item.active .accordion-icon {
   transform: rotate(180deg);
 }
 
-/*SVG icon styling */
+/* SVG icon styling */
 .accordion-icon img {
   width: 100%;
   height: 100%;
   display: block;
 }
 
-/* Content wapper for smooth animation */
+/* Content wrapper (for smooth animation) */
 .accordion-content {
   max-height: 0;
   overflow: hidden;
@@ -129,7 +129,7 @@ body {
 /* Responsive design for smaller screens */
 @media (max-width: 600px) {
   .header h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .accordion-header {
@@ -138,7 +138,7 @@ body {
   }
 
   .accordion-body {
-    padding: 0px 20px 15px 20px;
+    padding: 0 20px 15px 20px;
     font-size: 0.95rem;
   }
 }
